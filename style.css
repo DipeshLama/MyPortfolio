@@ -172,7 +172,7 @@ section .title::after{
 }
 /* About me content styling */
 .about .title::after{
-    content: "who i am";
+    content: "who I am";
 }
 .about .about-content .left{
     width: 45%;
@@ -227,11 +227,11 @@ section{
     background: white;
 }
 .education{
-    background: #f2f2f5;
+    background: #f7f8f9;
 }
 .education .title::after{
     content: "Certifications";
-    background-color: #f2f2f5;
+    background-color: #f7f8f9;
 }
 .education .education-title {
     font-size: 26px;
@@ -275,8 +275,99 @@ section{
     border: 2px solid #0563bb;
   }
 
+  /* Projects section */
 
 
+  .project .title::after{
+    content: "What I have done";
+}
+ .project .project-item {
+    padding: 10px 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #0563bb;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background: white;
+    margin-bottom: 20px;
+    background:#fff ;
+  }
+
+  .project .project-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #0563bb;
+    margin-bottom: 10px;
+  }
+  .project .project-item h5 {
+    font-size: 16px;
+    background: #f7f8f9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .project .project-item ul {
+    padding-left: 20px;
+  }
+  .project .project-item ul li {
+    padding-bottom: 10px;
+  }
+  .project .project-item:last-child {
+    padding-bottom: 0;
+  }
+  .project .project-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #0563bb;
+  }
+
+  /* .project .project-item ul .project-list-bullet{
+    list-style-type: circle
+  } */
+
+/* Footer section */
+#footer{
+    background: #f7f8f9;
+    color: #45505b;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+}
+#footer .social-links {
+    margin: 0 0 40px 0;
+  }
+  #footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #0563bb;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  #footer .social-links a:hover {
+    background: #0678e3;
+    color: #fff;
+    text-decoration: none;
+  }
+  #footer .copyright {
+    margin: 0 0 5px 0;
+  }
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
